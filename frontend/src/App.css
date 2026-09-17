@@ -1,0 +1,446 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  height: 75px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #334155;
+  font-size: 15px;
+}
+
+.navLinks a:hover {
+  color: #2563eb;
+}
+
+button {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #2563eb;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.loginBtn {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.signupBtn {
+  background: #2563eb;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 550px;
+  padding: 120px 20px 80px;
+  text-align: center;
+  background: linear-gradient(135deg, #eff6ff, #ffffff);
+}
+
+.hero h1 {
+  max-width: 850px;
+  margin: auto;
+  font-size: 55px;
+  line-height: 1.15;
+}
+
+.hero h1 span {
+  color: #2563eb;
+}
+
+.hero > p {
+  color: #64748b;
+  font-size: 19px;
+  margin: 25px auto;
+}
+
+.searchBox {
+  max-width: 650px;
+  margin: 35px auto 25px;
+  display: flex;
+  background: white;
+  padding: 7px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.searchBox input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.searchBox button {
+  padding: 15px 30px;
+}
+
+.heroButtons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.outlineBtn {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+/* SERVICES */
+
+.services {
+  padding: 80px 7%;
+  text-align: center;
+  background: white;
+}
+
+.services h2,
+.howItWorks h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.sectionText {
+  color: #64748b;
+  margin-bottom: 45px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 30px 25px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 35px;
+}
+
+.card h3 {
+  margin: 20px 0 10px;
+}
+
+.card p {
+  color: #64748b;
+  line-height: 1.6;
+  min-height: 75px;
+}
+
+/* HOW IT WORKS */
+
+.howItWorks {
+  padding: 80px 7%;
+  text-align: center;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.steps span {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background: #2563eb;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.steps p {
+  color: #64748b;
+}
+
+/* CTA */
+
+.cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: #2563eb;
+  color: white;
+}
+
+.cta h2 {
+  font-size: 38px;
+  margin: 0 0 15px;
+}
+
+.cta p {
+  margin-bottom: 30px;
+}
+
+.cta button {
+  background: white;
+  color: #2563eb;
+}
+
+/* FOOTER */
+
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 35px;
+}
+
+footer h3 {
+  margin-top: 0;
+}
+
+footer p {
+  color: #cbd5e1;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navLinks a {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .cards,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .searchBox {
+    flex-direction: column;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loginBtn {
+    display: none;
+  }
+}
+/* LOGIN AND SIGNUP */
+
+.loginLink,
+.signupLink {
+  text-decoration: none;
+  padding: 11px 20px;
+  border-radius: 7px;
+}
+
+.loginLink {
+  border: 1px solid #2563eb;
+  color: #2563eb !important;
+}
+
+.signupLink {
+  background: #2563eb;
+  color: white !important;
+}
+
+.authPage {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  padding: 40px 20px;
+}
+
+.authCard {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.authCard h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.authCard > p {
+  text-align: center;
+  color: #64748b;
+}
+
+.authCard form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.authCard input,
+.authCard select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.authCard input:focus,
+.authCard select:focus {
+  border-color: #2563eb;
+}
+
+.authCard form button {
+  width: 100%;
+  padding: 14px;
+}
+
+.authBottom {
+  margin-top: 25px;
+}
+
+.authBottom a {
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* DASHBOARD */
+
+.dashboardPage {
+  min-height: calc(100vh - 75px);
+  background: #f8fafc;
+  padding: 50px 7%;
+}
+
+.dashboardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.dashboardHeader h1 {
+  margin-bottom: 8px;
+}
+
+.dashboardHeader p {
+  color: #64748b;
+}
+
+.dashboardCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.dashboardCard {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.dashboardCard h3 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.dashboardCard p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .dashboardCards {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
