@@ -71,7 +71,7 @@ function MyInvitations() {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/invitations/my-invitations",
+            "https://freelancehub-marketplace.onrender.com/api/invitations/my-invitations",
             {
               headers: {
                 Authorization:
@@ -222,7 +222,7 @@ function MyInvitations() {
 
         const response =
           await fetch(
-            `http://localhost:5000/api/invitations/${invitationId}/status`,
+            `https://freelancehub-marketplace.onrender.com/api/invitations/${invitationId}/status`,
             {
               method: "PATCH",
 
@@ -321,7 +321,7 @@ function MyInvitations() {
 
         const response =
           await fetch(
-            `http://localhost:5000/api/invitations/${invitationId}/status`,
+            `https://freelancehub-marketplace.onrender.com/api/invitations/${invitationId}/status`,
             {
               method: "PATCH",
 

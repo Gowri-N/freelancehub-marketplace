@@ -106,7 +106,7 @@ function PostProject() {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/projects",
+            "https://freelancehub-marketplace.onrender.com/api/projects",
             {
               method: "POST",
 

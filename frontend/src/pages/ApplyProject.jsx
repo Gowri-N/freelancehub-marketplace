@@ -52,7 +52,7 @@ function ApplyProject() {
 
           const response =
             await fetch(
-              "http://localhost:5000/api/projects",
+              "https://freelancehub-marketplace.onrender.com/api/projects",
               {
                 headers: {
                   Authorization:
@@ -183,7 +183,7 @@ function ApplyProject() {
 
       const response =
         await fetch(
-          "http://localhost:5000/api/applications",
+          "https://freelancehub-marketplace.onrender.com/api/applications",
           {
             method: "POST",
 

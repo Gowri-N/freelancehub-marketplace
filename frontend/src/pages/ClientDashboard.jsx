@@ -72,7 +72,7 @@ function ClientDashboard() {
         try {
           const messageResponse =
             await fetch(
-              "http://localhost:5000/api/messages/unread-count",
+              "https://freelancehub-marketplace.onrender.com/api/messages/unread-count",
               {
                 headers: {
                   Authorization:
@@ -96,7 +96,7 @@ function ClientDashboard() {
 
           const applicationResponse =
             await fetch(
-              "http://localhost:5000/api/applications/client/pending-count",
+              "https://freelancehub-marketplace.onrender.com/api/applications/client/pending-count",
               {
                 headers: {
                   Authorization:
@@ -121,7 +121,7 @@ function ClientDashboard() {
 
           const invitationResponse =
             await fetch(
-              "http://localhost:5000/api/invitations/sent",
+              "https://freelancehub-marketplace.onrender.com/api/invitations/sent",
               {
                 headers: {
                   Authorization:

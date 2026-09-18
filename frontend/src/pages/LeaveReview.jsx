@@ -71,7 +71,7 @@ function LeaveReview() {
 
           const response =
             await fetch(
-              "http://localhost:5000/api/projects",
+              "https://freelancehub-marketplace.onrender.com/api/projects",
               {
                 headers: {
                   Authorization:
@@ -172,7 +172,7 @@ function LeaveReview() {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/reviews",
+            "https://freelancehub-marketplace.onrender.com/api/reviews",
             {
               method: "POST",
 

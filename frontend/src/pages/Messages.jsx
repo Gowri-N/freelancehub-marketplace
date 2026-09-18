@@ -44,7 +44,7 @@ function Messages() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/messages/conversations",
+        "https://freelancehub-marketplace.onrender.com/api/messages/conversations",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -99,7 +99,7 @@ function Messages() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/messages/project/${conversation.projectId}`,
+        `https://freelancehub-marketplace.onrender.com/api/messages/project/${conversation.projectId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -116,7 +116,7 @@ function Messages() {
 
         if (markAsRead) {
           await fetch(
-            `http://localhost:5000/api/messages/project/${conversation.projectId}/read`,
+            `https://freelancehub-marketplace.onrender.com/api/messages/project/${conversation.projectId}/read`,
             {
               method: "PATCH",
 
@@ -262,7 +262,7 @@ function Messages() {
       setSending(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/messages",
+        "https://freelancehub-marketplace.onrender.com/api/messages",
         {
           method: "POST",
 

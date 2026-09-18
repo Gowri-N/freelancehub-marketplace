@@ -52,7 +52,7 @@ function FindProjects() {
 
           const response =
             await fetch(
-              "http://localhost:5000/api/projects",
+              "https://freelancehub-marketplace.onrender.com/api/projects",
               {
                 headers: {
                   Authorization:

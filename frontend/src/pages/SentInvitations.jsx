@@ -63,7 +63,7 @@ function SentInvitations() {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/invitations/sent",
+            "https://freelancehub-marketplace.onrender.com/api/invitations/sent",
             {
               headers: {
                 Authorization:
@@ -125,7 +125,7 @@ function SentInvitations() {
 
         const response =
           await fetch(
-            `http://localhost:5000/api/invitations/${invitationId}/cancel`,
+            `https://freelancehub-marketplace.onrender.com/api/invitations/${invitationId}/cancel`,
             {
               method: "PATCH",
 

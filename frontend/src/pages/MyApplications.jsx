@@ -63,7 +63,7 @@ function MyApplications() {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/applications/my-applications",
+            "https://freelancehub-marketplace.onrender.com/api/applications/my-applications",
             {
               headers: {
                 Authorization:
@@ -145,7 +145,7 @@ function MyApplications() {
 
         const response =
           await fetch(
-            `http://localhost:5000/api/applications/${applicationId}`,
+            `https://freelancehub-marketplace.onrender.com/api/applications/${applicationId}`,
             {
               method: "DELETE",
 

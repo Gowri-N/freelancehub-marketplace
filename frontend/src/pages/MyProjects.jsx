@@ -91,7 +91,7 @@ function MyProjects() {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/projects",
+            "https://freelancehub-marketplace.onrender.com/api/projects",
             {
               headers: {
                 Authorization:
@@ -141,7 +141,7 @@ function MyProjects() {
                 try {
                   const reviewResponse =
                     await fetch(
-                      `http://localhost:5000/api/reviews/project/${project._id}`,
+                      `https://freelancehub-marketplace.onrender.com/api/reviews/project/${project._id}`,
                       {
                         headers: {
                           Authorization:
@@ -292,7 +292,7 @@ function MyProjects() {
 
         const response =
           await fetch(
-            `http://localhost:5000/api/projects/${projectId}/status`,
+            `https://freelancehub-marketplace.onrender.com/api/projects/${projectId}/status`,
             {
               method: "PATCH",
 
@@ -391,7 +391,7 @@ function MyProjects() {
 
         const response =
           await fetch(
-            `http://localhost:5000/api/projects/${projectId}`,
+            `https://freelancehub-marketplace.onrender.com/api/projects/${projectId}`,
             {
               method: "DELETE",
 

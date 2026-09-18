@@ -80,7 +80,7 @@ function FreelancerProfile() {
 
           const profileResponse =
             await fetch(
-              `http://localhost:5000/api/auth/freelancers/${freelancerId}`,
+              `https://freelancehub-marketplace.onrender.com/api/auth/freelancers/${freelancerId}`,
               {
                 headers: {
                   Authorization:
@@ -111,7 +111,7 @@ function FreelancerProfile() {
           try {
             const reviewResponse =
               await fetch(
-                `http://localhost:5000/api/reviews/freelancer/${freelancerId}`,
+                `https://freelancehub-marketplace.onrender.com/api/reviews/freelancer/${freelancerId}`,
                 {
                   headers: {
                     Authorization:
@@ -151,7 +151,7 @@ function FreelancerProfile() {
           try {
             const projectResponse =
               await fetch(
-                "http://localhost:5000/api/projects",
+                "https://freelancehub-marketplace.onrender.com/api/projects",
                 {
                   headers: {
                     Authorization:
@@ -248,7 +248,7 @@ function FreelancerProfile() {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/invitations",
+            "https://freelancehub-marketplace.onrender.com/api/invitations",
             {
               method: "POST",
 

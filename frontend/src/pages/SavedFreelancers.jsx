@@ -50,7 +50,7 @@ function SavedFreelancers() {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/favourites",
+            "https://freelancehub-marketplace.onrender.com/api/favourites",
             {
               headers: {
                 Authorization:
@@ -104,7 +104,7 @@ function SavedFreelancers() {
               try {
                 const response =
                   await fetch(
-                    `http://localhost:5000/api/reviews/freelancer/${freelancerId}`,
+                    `https://freelancehub-marketplace.onrender.com/api/reviews/freelancer/${freelancerId}`,
                     {
                       headers: {
                         Authorization:
@@ -171,7 +171,7 @@ function SavedFreelancers() {
 
         const response =
           await fetch(
-            `http://localhost:5000/api/favourites/${freelancerId}`,
+            `https://freelancehub-marketplace.onrender.com/api/favourites/${freelancerId}`,
             {
               method: "DELETE",
 

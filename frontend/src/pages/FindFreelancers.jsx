@@ -82,7 +82,7 @@ function FindFreelancers() {
 
           const freelancerResponse =
             await fetch(
-              "http://localhost:5000/api/auth/freelancers",
+              "https://freelancehub-marketplace.onrender.com/api/auth/freelancers",
               {
                 headers: {
                   Authorization:
@@ -127,7 +127,7 @@ function FindFreelancers() {
                 try {
                   const response =
                     await fetch(
-                      `http://localhost:5000/api/reviews/freelancer/${freelancer._id}`,
+                      `https://freelancehub-marketplace.onrender.com/api/reviews/freelancer/${freelancer._id}`,
                       {
                         headers: {
                           Authorization:
@@ -164,7 +164,7 @@ function FindFreelancers() {
           try {
             const savedResponse =
               await fetch(
-                "http://localhost:5000/api/favourites",
+                "https://freelancehub-marketplace.onrender.com/api/favourites",
                 {
                   headers: {
                     Authorization:
@@ -437,8 +437,8 @@ function FindFreelancers() {
         const response =
           await fetch(
             isSaved
-              ? `http://localhost:5000/api/favourites/${freelancerId}`
-              : "http://localhost:5000/api/favourites",
+              ? `https://freelancehub-marketplace.onrender.com/api/favourites/${freelancerId}`
+              : "https://freelancehub-marketplace.onrender.com/api/favourites",
             {
               method:
                 isSaved

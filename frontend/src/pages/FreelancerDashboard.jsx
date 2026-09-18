@@ -67,7 +67,7 @@ function FreelancerDashboard() {
         try {
           const messageResponse =
             await fetch(
-              "http://localhost:5000/api/messages/unread-count",
+              "https://freelancehub-marketplace.onrender.com/api/messages/unread-count",
               {
                 headers: {
                   Authorization:
@@ -91,7 +91,7 @@ function FreelancerDashboard() {
 
           const invitationResponse =
             await fetch(
-              "http://localhost:5000/api/invitations/my-invitations",
+              "https://freelancehub-marketplace.onrender.com/api/invitations/my-invitations",
               {
                 headers: {
                   Authorization:

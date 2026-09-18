@@ -71,7 +71,7 @@ function EditProfile() {
 
           const response =
             await fetch(
-              "http://localhost:5000/api/profile",
+              "https://freelancehub-marketplace.onrender.com/api/profile",
               {
                 headers: {
                   Authorization:
@@ -124,7 +124,7 @@ function EditProfile() {
             try {
               const reviewResponse =
                 await fetch(
-                  `http://localhost:5000/api/reviews/freelancer/${freelancerId}`,
+                  `https://freelancehub-marketplace.onrender.com/api/reviews/freelancer/${freelancerId}`,
                   {
                     headers: {
                       Authorization:
@@ -236,7 +236,7 @@ function EditProfile() {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/profile",
+            "https://freelancehub-marketplace.onrender.com/api/profile",
             {
               method: "PUT",
 
